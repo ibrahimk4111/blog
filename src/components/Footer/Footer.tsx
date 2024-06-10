@@ -1,3 +1,5 @@
+import "./Footer.css"
+
 import {
   Button,
   Col,
@@ -12,7 +14,7 @@ const Footer = () => {
   return (
     <div className=" bg-dark text-white ">
       <Container>
-        <Row className=" gap-5 p-5 ">
+        <Row className=" gap-lg-5 gap-2 py-5 px-2 ">
           {/* About us */}
           <Col>
             <h5 className=" mb-3">About us</h5>
@@ -24,7 +26,7 @@ const Footer = () => {
           </Col>
 
           {/* Newsletter */}
-          <Col>
+          <Col sm={12} md="auto">
             <h5 className=" mb-3 ">Newsletter</h5>
             <p className=" custom-footer-text-sm ">
               Stay updated with our latest blogs.
@@ -35,7 +37,7 @@ const Footer = () => {
                 aria-label="Email address"
                 aria-describedby="basic-addon2"
               />
-              <Button variant="outline-secondary" id="button-addon2">
+              <Button variant="secondary" id="button-addon2">
                 <FaTelegramPlane fill="cyan" size={25} />
               </Button>
             </InputGroup>
@@ -51,7 +53,7 @@ const Footer = () => {
               <li className=" custom-footer-li "><a href="#" > Professional</a></li>
               <li className=" custom-footer-li "><a href="#" > Science</a></li>
               <li className=" custom-footer-li "><a href="#" > Life & arts</a></li>
-              <li className=" custom-footer-li "><a href="#" > Data</a></li>
+              <li className=" custom-footer-li mt-3 "><a href="#" > Data</a></li>
               <li className=" custom-footer-li "><a href="#" > API</a></li>
             </div>
           </Col>
@@ -68,6 +70,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        <p className=" custom-footer-text-sm pb-5 text-center">Copyright ©2024 All rights reserved | This template is made with  by Colorlib</p>
       </Container>
     </div>
   );

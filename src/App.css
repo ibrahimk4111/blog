@@ -4,32 +4,3 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-.custom-footer-text-sm{
-  font-size: 12px;
-  color: rgb(162, 162, 162)
-}
-
-.custom-footer-li{
-  list-style-type: none;
-}
-
-.custom-footer-li>a{
-  text-decoration: none;
-  font-size: 12px;
-  color: rgb(162, 162, 162)
-}
-
-.custom-footer-li>a:hover{
-  text-decoration: underline;
-}
-
-.custom-footer-icon{
-  font-size: 18px;
-  color: rgb(162, 162, 162);
-  cursor: pointer;
-}
-
-.custom-footer-icon:hover{
-  color: white;
-}
