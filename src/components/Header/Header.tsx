@@ -1,10 +1,10 @@
 import { useState } from "react";
 import {
-  Container,
   Navbar,
   Nav,
   NavDropdown,
   Offcanvas,
+  Container,
 } from "react-bootstrap";
 
 const Header = () => {
@@ -13,14 +13,14 @@ const Header = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <Container>
-      <div className="d-flex justify-content-between py-2">
+    <>
+      <Container className=" d-flex justify-content-between py-2">
         <div className=" w-25 ">
           <span className=" fw-bolder fs-1 ">Blog</span>_APP
         </div>
 
         <Navbar expand="lg" className=" justify-content-end relative ">
-          <Nav className="me-auto d-md-none d-lg-flex" >
+          <Nav className="me-auto d-none d-lg-flex" >
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Culture & recreation</Nav.Link>
             <NavDropdown title="Inspiration" id="basic-nav-dropdown">
@@ -35,8 +35,8 @@ const Header = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#">Life & arts</Nav.Link>
-            <Nav.Link href="#">Science</Nav.Link>
+            <Nav.Link href="#life">Life & arts</Nav.Link>
+            <Nav.Link href="#science">Science</Nav.Link>
           </Nav>
 
           <Navbar.Toggle
@@ -53,8 +53,8 @@ const Header = () => {
             </Offcanvas.Body>
           </Offcanvas>
         </Navbar>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };
 
