@@ -16,16 +16,17 @@ const Header = () => {
     <>
       <Container className=" d-flex justify-content-between py-2">
         <div className=" w-25 ">
-          <span className=" fw-bolder fs-1 ">Blog</span>_APP
+          <span className=" font-bold fs-1 ">Writer's</span>_NOTE
         </div>
 
         <Navbar expand="lg" className=" justify-content-end relative ">
           <Nav className="me-auto d-none d-lg-flex" >
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Culture & recreation</Nav.Link>
-            <NavDropdown title="Inspiration" id="basic-nav-dropdown">
+            <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Business</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#life">Life & arts</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -35,8 +36,8 @@ const Header = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#life">Life & arts</Nav.Link>
             <Nav.Link href="#science">Science</Nav.Link>
+            <Nav.Link href="#science">Contact</Nav.Link>
           </Nav>
 
           <Navbar.Toggle

@@ -2,10 +2,11 @@ import { articleData } from "../utils/Articles";
 
 const Articles = () => {
   return (
-    <div className=" pt-2 pb-5">
-      <h5 className=" uppercase mb-4">
+    <div className=" pb-5 px-2">
+      <h5 className=" uppercase py-2">
         <span className=" underline ">Latest</span>{" "}Articles
       </h5>
+      <hr className=" bg-slate-50 " />
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 gap-y-10">
         {articleData.map((item) => (
           <div key={item.id} className="flex flex-col gap-2 group cursor-pointer ">

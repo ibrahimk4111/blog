@@ -3,7 +3,7 @@ import { articleData } from "../utils/Articles";
 const PopularPosts = () => {
   return (
     <div className=" pt-2 pb-5 ">
-      <h5 className=" uppercase ">Popular Stories</h5>
+      <h5 className=" uppercase "> Popular Posts</h5>
       <hr className=" bg-white " />
       <div className=" space-y-3">
         {articleData.map((item) => (
@@ -16,7 +16,7 @@ const PopularPosts = () => {
               />
             </div>
             <div className=" ">
-              <h6 className=" text-sm group-hover:opacity-70 transition-all duration-300 ease-in ">
+              <h6 className=" text-sm group-hover:opacity-70 transition-all duration-300 ease-in line-clamp-2 ">
                 {item.title}
               </h6>
               <div className=" text-slate-400 text-xs flex flex-wrap gap-2">
