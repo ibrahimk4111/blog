@@ -5,9 +5,9 @@ const PopularPosts = () => {
     <div className=" pt-2 pb-5 ">
       <h5 className=" uppercase "> Popular Posts</h5>
       <hr className=" bg-white " />
-      <div className=" space-y-3">
+      <div className=" space-y-3 p-2">
         {articleData.map((item) => (
-          <div key={item.id} className="flex gap-1 group cursor-pointer ">
+          <div key={item.id} className="flex gap-2 group cursor-pointer ">
             <div className=" max-w-32 overflow-hidden rounded-md">
               <img
                 src={item.thumbnail}

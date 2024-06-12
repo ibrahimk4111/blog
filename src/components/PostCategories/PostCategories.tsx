@@ -15,7 +15,7 @@ const PostCategories = () => {
     <div className=" pb-5 ">
       <h5 className=" uppercase "> Post Categories</h5>
       <hr className=" bg-white " />
-      <div className=" space-y-3 ">
+      <div className=" space-y-3 p-2">
         {
           data.map((item, index)=>(
             <div key={index} className="py-1 even:bg-slate-50 rounded-md flex justify-between items-center px-3 hover:underline underline-offset-8 transition-all duration-300 ease-in">

@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import { tabsData } from "../utils/Tabs";
 const HeroTabs = () => {
   return (
-    <div className="lg:my-20 ">
+    <div className="my-20 ">
       <Container className=" flex justify-center items-center ">
         <div className=" lg:max-w-[80vw] grid lg:grid-cols-3 md:grid-cols-2 gap-3 ">
           {tabsData.map((item, index) => (

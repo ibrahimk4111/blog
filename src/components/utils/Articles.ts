@@ -4,7 +4,7 @@ import img3 from "../../../public/img_3.webp";
 
 export const articleData = [{
   id: 1,
-  title: "2017 Market Performance: Crypto vs.Stock",
+  title: "The 20 Biggest Fintech Companies In America 2019",
   thumbnail: img1,
   createdBy: "John Doe",
   avatar: "https://example.com/avatar1.jpg",
@@ -40,7 +40,7 @@ export const articleData = [{
 },
 {
   id: 3,
-  title: "2017 Market Performance: Crypto vs.Stock",
+  title: "Lorem Ipsum dolor sit consectetur adipisicing.",
   thumbnail: img3,
   createdBy: "Charlie Green",
   avatar: "https://example.com/avatar5.jpg",
@@ -58,7 +58,7 @@ export const articleData = [{
 },
 {
   id: 4,
-  title: "2017 Market Performance: Crypto vs.Stock",
+  title: "The 20 Biggest Fintech Companies In America 2019",
   thumbnail: img2,
   createdBy: "Emily Clark",
   avatar: "https://example.com/avatar7.jpg",
@@ -94,7 +94,7 @@ export const articleData = [{
 },
 {
   id: 6,
-  title: "2017 Market Performance: Crypto vs.Stock",
+  title: "The 20 Biggest Fintech Companies In America 2019",
   thumbnail: img1,
   createdBy: "Irene Walker",
   avatar: "https://example.com/avatar11.jpg",
