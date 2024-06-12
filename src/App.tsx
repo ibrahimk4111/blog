@@ -18,7 +18,7 @@ function App() {
         <div className=" lg:col-span-9 px-2">
           <Articles />
         </div>
-        <div className=" lg:col-span-3 bg-slate-100 px-2 my-5 rounded-md">
+        <div className=" lg:col-span-3 bg-slate-100 px-2 rounded-md">
           <PopularPosts />
           <PostCategories />
         </div>

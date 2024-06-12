@@ -2,8 +2,8 @@ import { Container } from "react-bootstrap";
 import { tabsData } from "../utils/Tabs";
 const HeroTabs = () => {
   return (
-    <div>
-      <Container className=" py-5 flex justify-center items-center ">
+    <div className="lg:my-20 ">
+      <Container className=" flex justify-center items-center ">
         <div className=" lg:max-w-[80vw] grid lg:grid-cols-3 md:grid-cols-2 gap-3 ">
           {tabsData.map((item, index) => (
             <div key={index} className=" flex lg:gap-5 gap-3 group cursor-pointer ">

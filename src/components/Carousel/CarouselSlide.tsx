@@ -18,13 +18,13 @@ const CarouselSlide = () => {
             </div>
             <div className=" bg-black/40 absolute top-0 left-0 w-full h-full z-10 "></div>
             <Carousel.Caption className=" z-20 flex flex-col justify-center items-start h-full " >
-              <div className=" text-white space-y-10 max-w-[60%] ">
-                <p className={`${item.bg} uppercase font-semibold rounded-md p-2 text-white w-32 text-center`}>{item.tag}</p>
-                <h1 className=" font-semibold text-start ">{item.title}</h1>
-                <div className=" flex justify-start items-center text-slate-200 text-sm mt-3 gap-2">
+              <div className=" text-white lg:space-y-10 space-y-2 ">
+                <p className={`${item.bg} md:block hidden uppercase font-semibold rounded-md p-2 text-white w-32 text-center`}>{item.tag}</p>
+                <p className=" font-semibold text-start lg:w-[60%] lg:text-4xl text-xl ">{item.title}</p>
+                <div className=" flex flex-wrap justify-start items-center text-slate-200 text-sm mt-3 gap-2">
                   <img src={item.avatar} alt="avater img" className=" rounded-full w-6 h-6 " />
                   <span>By: {item.createdBy}</span>
-                  <span className=" ml-10 ">{item.datePublished}</span>
+                  <span className=" lg:ml-10 ">{item.datePublished}</span>
                 </div>
               </div>
             </Carousel.Caption>

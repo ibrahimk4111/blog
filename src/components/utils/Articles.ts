@@ -59,7 +59,7 @@ export const articleData = [{
 {
   id: 4,
   title: "2017 Market Performance: Crypto vs.Stock",
-  thumbnail: img1,
+  thumbnail: img2,
   createdBy: "Emily Clark",
   avatar: "https://example.com/avatar7.jpg",
   desc: "This is the fourth blog post description.",
@@ -77,7 +77,7 @@ export const articleData = [{
 {
   id: 5,
   title: "2017 Market Performance: Crypto vs.Stock",
-  thumbnail: img2,
+  thumbnail: img3,
   createdBy: "George Lee",
   avatar: "https://example.com/avatar9.jpg",
   desc: "This is the fifth blog post description.",
@@ -95,7 +95,7 @@ export const articleData = [{
 {
   id: 6,
   title: "2017 Market Performance: Crypto vs.Stock",
-  thumbnail: img3,
+  thumbnail: img1,
   createdBy: "Irene Walker",
   avatar: "https://example.com/avatar11.jpg",
   desc: "This is the sixth blog post description.",
