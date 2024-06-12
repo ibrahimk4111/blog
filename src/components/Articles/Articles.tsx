@@ -1,4 +1,5 @@
 import { articleData } from "../utils/Articles";
+import img2 from '../../../public/img_2.webp'
 
 const Articles = () => {
   return (
@@ -7,6 +8,11 @@ const Articles = () => {
         <span className=" underline ">Latest</span>{" "}Articles
       </h5>
       <hr className=" bg-slate-50 " />
+      <div>
+        <div>
+          <img src={img2} alt="" />
+        </div>
+      </div>
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 gap-y-10">
         {articleData.map((item) => (
           <div key={item.id} className="flex flex-col gap-2 group cursor-pointer ">
