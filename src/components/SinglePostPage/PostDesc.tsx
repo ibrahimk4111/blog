@@ -101,7 +101,7 @@ const PostDesc = () => {
         <div className=" flex justify-between items-center gap-1">
           <div className=" flex items-center gap-2">
             <GiSelfLove />
-            <span>Khalil and 4 people like this</span>
+            <span>4 peoples liked </span>
           </div>
           <div className=" flex items-center gap-2">
             <BiComment /> <span>06 Comments</span>
