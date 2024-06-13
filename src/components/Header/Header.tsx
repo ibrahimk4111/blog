@@ -6,6 +6,7 @@ import {
   Offcanvas,
   Container,
 } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -20,24 +21,35 @@ const Header = () => {
         </div>
 
         <Navbar expand="lg" className=" justify-content-end relative ">
-          <Nav className="me-auto d-none d-lg-flex" >
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Culture & recreation</Nav.Link>
+          <Nav className="me-auto d-none d-lg-flex">
+            <Nav.Link>
+              <NavLink to="" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00">
+                Home
+              </NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to="culture" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00">Culture & recreation</NavLink>
+            </Nav.Link>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Business</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#life">Life & arts</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item>
+                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Business</NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item>
+                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Action</NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Life & arts</NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Another action</NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#science">Science</Nav.Link>
-            <Nav.Link href="#science">Contact</Nav.Link>
+            <Nav.Link>
+              <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Science</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Contact</NavLink>
+            </Nav.Link>
           </Nav>
 
           <Navbar.Toggle

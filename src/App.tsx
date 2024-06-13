@@ -1,29 +1,32 @@
-import { Container } from "react-bootstrap";
 import "./App.css";
-import Articles from "./components/Articles/Articles";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import HeroTabs from "./components/Tabs/HeroTabs";
-import PopularPosts from "./components/PopularPosts/PopularPosts";
-import CarouselSlide from "./components/Carousel/CarouselSlide";
-import PostCategories from "./components/PostCategories/PostCategories";
+import { RouterProvider, createHashRouter } from "react-router-dom";
+import Home from "./components/Home/Home";
+import ErrorPage from "./components/Error/ErrorPage";
+import SinglePostPage from "./components/SinglePostPage/SinglePostPage";
+import Layout from "./components/Home/Layout";
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "culture",
+        element: <SinglePostPage />,
+      },
+    ],
+  }
+]);
 
 function App() {
   return (
     <>
-      <Header />
-      <CarouselSlide />
-      <HeroTabs />
-      <Container className=" grid lg:grid-cols-12">
-        <div className=" lg:col-span-9 px-2">
-          <Articles />
-        </div>
-        <div className=" lg:col-span-3 bg-slate-100 px-2 rounded-md">
-          <PopularPosts />
-          <PostCategories />
-        </div>
-      </Container>
-      <Footer />
+      <RouterProvider router={router} />
     </>
   );
 }

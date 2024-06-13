@@ -4,10 +4,11 @@ import { CgCalendarDates } from "react-icons/cg";
 
 const Articles = () => {
   return (
-    <div className=" pb-5 px-2">
-      <h5 className=" uppercase py-2">
-        <span className=" underline ">Latest</span> Articles
-      </h5>
+    <div className=" px-2">
+      <div className=" flex justify-between items-center">
+        <h5 className=" uppercase pt-2 "> Latest Posts </h5>
+        <button className=" hover:underline ">See More</button>
+      </div>
       <hr className=" bg-slate-50 " />
 
       {/* big image  */}
