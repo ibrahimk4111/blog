@@ -16,7 +16,7 @@ const router = createHashRouter([
         element: <Home />,
       },
       {
-        path: "culture",
+        path: ":id",
         element: <SinglePostPage />,
       },
     ],

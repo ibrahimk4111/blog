@@ -28,7 +28,7 @@ const Header = () => {
               </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="culture" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00">Culture & recreation</NavLink>
+              <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00">Culture & recreation</NavLink>
             </Nav.Link>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item>

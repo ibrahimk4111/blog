@@ -12,8 +12,7 @@ const data = [
 
 const PostCategories = () => {
   return (
-    <div className=" pb-5 ">
-
+    <div className=" ">
       <h6 className=" uppercase px-3 "> Post Categories</h6>
       <hr className=" bg-white " />
       <div className=" space-y-3 p-2">
