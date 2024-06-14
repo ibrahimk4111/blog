@@ -50,13 +50,13 @@ const Trendings = () => {
               to={item.title}
               className=" group relative text-decoration-none h-full rounded-md overflow-hidden "
             >
-              <div className=" h-full rounded-md overflow-hidden ">
+              <div className=" h-100 rounded-md overflow-hidden ">
                 <img
                   src={item.thumbnail}
                   alt="portraitImg"
                   decoding="async"
                   loading="lazy"
-                  className=" h-full w-auto"
+                  className=" h-full w-auto bg-cover"
                 />
                 <div className=" rounded-md absolute top-0 left-0 h-full w-full bg-black/50 z-10 "></div>
                 <div className=" absolute bottom-0 left-0 w-full p-4 z-20 ">

@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h5 className=" mb-3">About us</h5>
             <p className=" custom-footer-text-sm ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              Voluptas Excepturi iste dolorem adipisci quo ullam et doloremque impedit enim, quae aspernatur aut aperiam rem ad. Nam tempora corporis nobis iure omnis?
               obcaecati voluptates pariatur laboriosam, reprehenderit ex
               molestias magni unde.
             </p>

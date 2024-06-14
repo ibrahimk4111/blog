@@ -118,7 +118,7 @@ const PostDesc = () => {
           <h4 className=" my-5 ">6 Comments</h4>
           <InputGroup className="my-4 rounded-md overflow-hidden">
             <Form.Control placeholder="Write your comment here" />
-            <button className=" bg-slate-200 px-3">
+            <button className=" bg-slate-100 hover:bg-slate-200 px-3">
               <FaTelegramPlane className=" text-orange-400" size={25} />
             </button>
           </InputGroup>
