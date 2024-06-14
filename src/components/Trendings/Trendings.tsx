@@ -43,33 +43,37 @@ const Trendings = () => {
         </div>
 
         {/* small cards */}
-        <div className=" lg:col-span-7 grid lg:grid-cols-3 gap-y-5 gap-x-2">
-          {articleData.map((item) => (
-            <NavLink to={item.title} className=" text-decoration-none h-full rounded-md overflow-hidden ">
-              <div
-                key={item.id}
-                className=" h-full group cursor-pointer bg-slate-100 rounded-md flex flex-col justify-start gap-3"
-              >
-                <div className=" overflow-hidden">
-                  <img
-                    src={item.thumbnail}
-                    alt="item img"
-                    className=" w-full h-auto bg-cover group-hover:opacity-60 "
-                  />
-                </div>
-                <div className=" flex flex-col justify-between gap-1 py-2 px-4 ">
-                  <div className=" text-slate-400 text-sm flex flex-wrap justify-between items-center">
-                    <span> {item.tags[0]} </span>
-                    <span> - </span>
-                    <span>{item.datePublished}</span>
+        <div className=" lg:col-span-7 grid lg:grid-cols-2 gap-3">
+          {articleData.slice(0, 4).map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.title}
+              className=" group relative text-decoration-none h-full rounded-md overflow-hidden "
+            >
+              <div className=" h-full rounded-md overflow-hidden ">
+                <img
+                  src={item.thumbnail}
+                  alt="portraitImg"
+                  decoding="async"
+                  loading="lazy"
+                  className=" h-full w-auto"
+                />
+                <div className=" rounded-md absolute top-0 left-0 h-full w-full bg-black/50 z-10 "></div>
+                <div className=" absolute bottom-0 left-0 w-full p-4 z-20 ">
+                  <div>
+                    <button className="bg-slate-100/10 backdrop-blur-sm text-white rounded-md py-1 px-3 text-center">
+                      {item.tags[0]}
+                    </button>
                   </div>
-                  <h6 className=" group-hover:underline text-slate-600 mt-2 ">
-                    {item.title}
-                  </h6>
-                  <button className=" p-1 text-orange-500 flex items-center gap-2">
+                  <h5 className=" font-semibold text-start text-white mt-4 ">
+                    The 20 Biggest Fintech Companies In America 2019
+                  </h5>
+                  <div className=" mt-4 flex items-center gap-2 text-slate-100 group-hover:underline group-hover:underline-offset-8 ">
                     <span>Read More </span>
-                    <BiRightArrowAlt className=" group-hover:translate-x-3 transition-all duration-300 ease-in " />
-                  </button>
+                    <span>
+                      <BiRightArrowAlt className=" group-hover:translate-x-2 transition-all duration-300 ease-in" />
+                    </span>
+                  </div>
                 </div>
               </div>
             </NavLink>

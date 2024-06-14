@@ -16,39 +16,77 @@ const Header = () => {
   return (
     <>
       <Container className=" d-flex justify-content-between py-2">
-        <div className=" w-25 ">
+        <NavLink to="" className=" text-decoration-none text-black w-25 ">
           <span className=" font-bold fs-1 ">Writer's</span>_NOTE
-        </div>
+        </NavLink>
 
         <Navbar expand="lg" className=" justify-content-end relative ">
           <Nav className="me-auto d-none d-lg-flex">
             <Nav.Link>
-              <NavLink to="" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00">
+              <NavLink
+                to=""
+                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+              >
                 Home
               </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00">Culture & recreation</NavLink>
+              <NavLink
+                to="#"
+                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+              >
+                Culture & recreation
+              </NavLink>
             </Nav.Link>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item>
-                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Business</NavLink>
+                <NavLink
+                  to="#"
+                  className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+                >
+                  Business
+                </NavLink>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Action</NavLink>
+                <NavLink
+                  to="#"
+                  className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+                >
+                  Action
+                </NavLink>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Life & arts</NavLink>
+                <NavLink
+                  to="#"
+                  className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+                >
+                  Life & arts
+                </NavLink>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Another action</NavLink>
+                <NavLink
+                  to="#"
+                  className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+                >
+                  Another action
+                </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link>
-              <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Science</NavLink>
+              <NavLink
+                to="#"
+                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+              >
+                Science
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="#" className="text-decoration-none p-2 text-slate-700 hover:text-slate-00" >Contact</NavLink>
+              <NavLink
+                to="#"
+                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+              >
+                Contact
+              </NavLink>
             </Nav.Link>
           </Nav>
 
