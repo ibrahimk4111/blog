@@ -17,7 +17,7 @@ const RecentPosts = () => {
         {articleData.map((item, index) => (
           <NavLink
             key={index}
-            to={item.title}
+            to="#"
             className=" group relative text-decoration-none h-full rounded-md overflow-hidden "
           >
             <div className=" h-100 rounded-md overflow-hidden ">
