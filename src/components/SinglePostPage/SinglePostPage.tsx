@@ -3,15 +3,17 @@ import PopularPosts from "../PopularPosts/PopularPosts";
 import PostCategories from "../PostCategories/PostCategories";
 import PostDesc from "./PostDesc";
 import { BiSearchAlt } from "react-icons/bi";
+import RecentPosts from "./RecentPosts";
 
 const SinglePostPage = () => {
   return (
     <Container className=" grid lg:grid-cols-12">
       <div className=" lg:col-span-9 px-2 my-5">
         <PostDesc />
+        <RecentPosts />
       </div>
-      <div className=" lg:col-span-3 bg-slate-100 px-2 rounded-md my-5">
-        <InputGroup className="my-3">
+      <div className=" lg:col-span-3 rounded-md mt-5">
+        <InputGroup className=" bg-slate-100 p-2 ">
           <Form.Control
             placeholder="Search Posts"
             aria-label="Search Posts"
@@ -22,7 +24,7 @@ const SinglePostPage = () => {
           </Button>
         </InputGroup>
         <PostCategories />
-        <div className=" p-4 ">
+        <div className=" p-4 bg-slate-100">
           <h6>TAGS</h6>
           <hr className=" bg-white " />
           <div className=" flex flex-wrap gap-1">

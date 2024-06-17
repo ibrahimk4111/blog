@@ -82,7 +82,7 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link>
               <NavLink
-                to="#"
+                to="contact"
                 className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
               >
                 Contact

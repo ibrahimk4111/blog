@@ -12,7 +12,7 @@ const data = [
 
 const PostCategories = () => {
   return (
-    <div className=" ">
+    <div className=" bg-slate-100 p-2 ">
       <h6 className=" uppercase px-3 "> Post Categories</h6>
       <hr className=" bg-white " />
       <div className=" space-y-3 p-2">

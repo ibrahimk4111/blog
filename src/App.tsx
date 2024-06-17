@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import ErrorPage from "./components/Error/ErrorPage";
 import SinglePostPage from "./components/SinglePostPage/SinglePostPage";
 import Layout from "./components/Home/Layout";
+import Contact from "./components/Contact/Contact";
 
 const router = createHashRouter([
   {
@@ -18,6 +19,10 @@ const router = createHashRouter([
       {
         path: ":id",
         element: <SinglePostPage />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   }
