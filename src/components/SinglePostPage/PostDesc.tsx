@@ -57,7 +57,7 @@ const PostDesc = () => {
                 />
               </div>
             </div>
-            <span className=" ml-5 ">2024-12-20</span>
+            <span className=" lg:ml-5 ">2024-12-20</span>
           </div>
         </div>
 

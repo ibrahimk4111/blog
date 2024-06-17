@@ -17,7 +17,7 @@ const Contact = () => {
         />
       </div>
       <Container className=" grid lg:grid-cols-2 gap-5">
-        <div className=" flex flex-col justify-center items-start gap-4 lg:w-[70%] mx-auto">
+        <div className=" flex flex-col justify-center items-start gap-4 lg:w-[70%] mx-auto px-4">
           <div className=" flex flex-col items-start gap-2 ">
             <BiLocationPlus className=" w-10 h-10 p-2 bg-slate-200 rounded-full" />
             <span>

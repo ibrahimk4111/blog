@@ -5,7 +5,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 
 const RecentPosts = () => {
   return (
-    <Container className=" p-4">
+    <Container className="p-2 my-10 ">
       <div className=" flex justify-between items-center">
         <h5 className=" uppercase pt-2 "> Recent Posts </h5>
         <button className=" hover:underline ">See More</button>
@@ -13,8 +13,8 @@ const RecentPosts = () => {
       <hr className=" bg-slate-50 " />
 
       {/* small cards */}
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-3">
-        {articleData.map((item, index) => (
+      <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-3">
+        {articleData.slice(0,4).map((item, index) => (
           <NavLink
             key={index}
             to="#"
