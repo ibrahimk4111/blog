@@ -5,9 +5,21 @@ import Trendings from "../Trendings/Trendings";
 import Articles from "../Articles/Articles";
 import PopularPosts from "../PopularPosts/PopularPosts";
 import PostCategories from "../PostCategories/PostCategories";
-import img2 from '../../../public/img_2.webp'
+import img2 from "/img_2.webp";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPosts } from "../../redux/postSlice";
+import { AppDispatch, RootState } from "../../redux/createStore";
 
 const Home = () => {
+  const dispatch = useDispatch<AppDispatch>();
+  const blogs = useSelector((state: RootState)=>state.posts)
+  useEffect(() => {
+      dispatch(fetchPosts());
+  }, []);
+
+  console.log(blogs)
+
   return (
     <>
       <CarouselSlide />

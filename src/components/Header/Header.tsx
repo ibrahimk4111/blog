@@ -23,22 +23,18 @@ const Header = () => {
 
         <Navbar expand="lg" className=" justify-content-end relative ">
           <Nav className="me-auto d-none d-lg-flex">
-            <Nav.Link>
-              <NavLink
-                to=""
-                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
-              >
-                Home
-              </NavLink>
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink
-                to="#"
-                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
-              >
-                Culture & recreation
-              </NavLink>
-            </Nav.Link>
+            <NavLink
+              to=""
+              className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="#"
+              className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+            >
+              Culture & recreation
+            </NavLink>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item>
                 <NavLink
@@ -73,22 +69,18 @@ const Header = () => {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link>
-              <NavLink
-                to="#"
-                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
-              >
-                Science
-              </NavLink>
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink
-                to="contact"
-                className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
-              >
-                Contact
-              </NavLink>
-            </Nav.Link>
+            <NavLink
+              to="#"
+              className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+            >
+              Science
+            </NavLink>
+            <NavLink
+              to="contact"
+              className="text-decoration-none p-2 text-slate-700 hover:text-slate-00"
+            >
+              Contact
+            </NavLink>
           </Nav>
 
           <Navbar.Toggle
@@ -125,7 +117,11 @@ const Header = () => {
                   >
                     Culture & recreation
                   </NavLink>
-                  <NavDropdown title="Categories" id="basic-nav-dropdown" className=" p-2 hover:bg-slate-100 rounded-md ">
+                  <NavDropdown
+                    title="Categories"
+                    id="basic-nav-dropdown"
+                    className=" p-2 hover:bg-slate-100 rounded-md "
+                  >
                     <NavDropdown.Item>
                       <NavLink
                         onClick={handleClose}

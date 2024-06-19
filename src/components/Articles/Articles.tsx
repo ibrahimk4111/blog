@@ -1,5 +1,5 @@
 import { articleData } from "../utils/Articles";
-import img2 from "../../../public/img_2.webp";
+import img2 from "/img_2.webp";
 import { CgCalendarDates } from "react-icons/cg";
 import { NavLink } from "react-router-dom";
 
@@ -48,9 +48,8 @@ const Articles = () => {
       {/* small cards */}
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 gap-y-10">
         {articleData.map((item) => (
-          <NavLink to={item.title} className=" text-decoration-none text-black ">
+          <NavLink key={item.id} to={item.title} className=" text-decoration-none text-black ">
             <div
-              key={item.id}
               className="flex flex-col gap-2 group cursor-pointer bg-slate-100 rounded-md overflow-hidden"
             >
               <div className=" overflow-hidden ">

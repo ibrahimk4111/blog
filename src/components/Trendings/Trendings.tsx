@@ -1,5 +1,5 @@
 import { articleData } from "../utils/Articles";
-import portraitImg from "../../../public/protrait.webp";
+import portraitImg from "/protrait.webp";
 import { Container } from "react-bootstrap";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
